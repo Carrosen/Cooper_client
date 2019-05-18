@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { getData } from '../Modules/PerformanceData'
-import { Line } from 'react-chartjs-2'
+import { Line, Pie } from 'react-chartjs-2'
 import moment from 'moment'
+// import { ratings } from './Modules/CooperCalculator'
 
 class DisplayPerformanceData extends Component {
   constructor(props) {
@@ -26,6 +27,14 @@ class DisplayPerformanceData extends Component {
     let dataIndex;
     let distances = []
     let labels = []
+    let ratings = [
+      'Excellent',
+      'Above average',
+      'Average',
+      'Below average',
+      'Poor'
+    ];
+    let messages = []
 
     if (this.props.updateIndex === true) {
       this.getPerformanceData();
@@ -38,6 +47,7 @@ class DisplayPerformanceData extends Component {
         let momentString = momentObj.format('YYYY-MM-DD');
         distances.push(entry.data.distance)
         labels.push(momentString)
+        messages.push(entry.data.message)
       })
       dataIndex = (
         <>
@@ -59,17 +69,25 @@ class DisplayPerformanceData extends Component {
       }],
     }
 
-  //   options: {
-  //     bezierCurve: false
-  //   }
-  // }
+    let piechart = {
+      labels: ratings,
+      datasets: [{
+        data: [1000, 2000, 3000],
+        backgroundColor: ['green', 'blue', 'purple', 'red', 'pink']
+       }]
+    }
 
     return (
       <>
         {dataIndex}
         <Line
-          data={data}
-          />
+          data = {data}
+        />
+
+        <Pie
+          data = {piechart}
+        />
+
       </>
     )
   }
