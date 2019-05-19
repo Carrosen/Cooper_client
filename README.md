@@ -1,68 +1,93 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# The challenge
 
-## Available Scripts
+We have a client request to build a fitness tracking application. The idea is that the app will allow users to track their condition using a specific test called The Cooper Test.
 
-In the project directory, you can run:
+The Cooper Test (aka The 12-minute run) was developed by Dr. Ken Cooper in 1968 as an easy way to measure aerobic fitness and provide an estimate of VO2 max for military personnel. The Cooper test, as it's also known, is still used today as a field test for determining aerobic fitness.
 
-### `npm start`
+Dr. Cooper found that there is a very high correlation between the distance someone can run (or walk) in 12 minutes and their VO2 max value, which measures the efficiency with which someone can use oxygen while exercising. This test is still one of the basic fitness tests used by the military. It is also used by many coaches and trainers to determine cardiovascular fitness and track fitness over time. This simple test also allows you to compare your cardiovascular endurance with others of your age and gender.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The challenge is to build a software solution that will make it possible not to only make the calculation but to record the data over time. Another requirement is that the app should have functionality that presents historical data of tests if a user has saved any historical data.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+In this challenge we WILL follow the AUT cycle approach, meaning that we will write tests first and work our way through the error messages and be guided by them when we write our implementation.
 
-### `npm test`
+This is a pretty advanced challenge that will require you to use both your Ruby and your JavaScript knowledge. We will be using the Ruby on Rails framework (back-end/API) and the React library (client).
+<br>
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Learning objectives from Craft Academy
 
-### `npm run build`
+* Learn how to build an API using Ruby on Rails
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Learn about testing API endpoints with RSpec using so called request specs
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+* Learn about CORS
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Learn how to authenticate users from a React application
 
-### `npm run eject`
+* Learn how to make a post request to an API from a client
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<br>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Deployment
+Deployed via [Heroku](https://www.heroku.com/) and [Netlify](https://www.netlify.com/).
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+See the deployed site [here](https://cooper-calculator.netlify.com/).
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<br>
 
-## Learn More
+# Screenshots
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![signup](https://user-images.githubusercontent.com/48257682/57986277-31645f00-7a73-11e9-93b6-259b9e016d95.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![cooper_calculator](https://user-images.githubusercontent.com/48257682/57986294-5bb61c80-7a73-11e9-823c-37abfb0df4b6.png)
 
-### Code Splitting
+![bmi_calculator](https://user-images.githubusercontent.com/48257682/57986300-67a1de80-7a73-11e9-9c14-267a93c24250.png)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+![my_runs](https://user-images.githubusercontent.com/48257682/57986291-51941e00-7a73-11e9-8e6d-a53fb7eebc2e.png)
 
-### Analyzing the Bundle Size
+<br>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+# Built with
 
-### Making a Progressive Web App
+[ReactJS](https://reactjs.org/) - A JavaScript library for building user interfaces.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+[Rails](https://rubyonrails.org/) - Imagine what you could build if you learned Ruby on Rails
 
-### Advanced Configuration
+<br>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+# Tested with
 
-### Deployment
+[RSPEC](http://rspec.info) - Making TDD Productive and Fun.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+[Cypress](https://www.cypress.io/) - Fast, easy and reliable testing for anything that runs in a browser.
 
-### `npm run build` fails to minify
+[Enzyme](https://airbnb.io/enzyme/) - JavaScript Testing utility for React that makes it easier to test your React Components' output.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<br>
+
+# Other tools and services used
+
+[Semantic UI React](https://react.semantic-ui.com/) - The official Semantic-UI-React integration.
+
+[react-chartjs-2](https://jerairrest.github.io/react-chartjs-2/) - React wrapper for Chart.js 2 .
+
+<br>
+
+# Authors
+
+**Carla Rosén** - [carrosen](https://github.com/carrosen)
+
+**Zane Neikena** - [zanenkn](https://github.com/zanenkn)
+
+<br>
+
+# License
+
+This project utilizes the [MIT open-source license](https://opensource.org/licenses/MIT).
+
+<br>
+
+# Acknowledgments
+
+Kudos to [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) for the README template 
+
+

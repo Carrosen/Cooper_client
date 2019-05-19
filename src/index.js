@@ -1,12 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import * as serviceWorker from './serviceWorker'
+import { Switch, Route, BrowserRouter } from 'react-router-dom'
+import CooperCalculator from './Components/CooperCalculator'
+import DisplayPerformanceData from './Components/DisplayPerformanceData'
+import Nav from './Components/Header'
+import BMICalculator from './Components/BMICalculator'
+import 'semantic-ui-css/semantic.min.css'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const Application = () => {
+  return (
+    <>
+    <Nav />
+    <Switch>
+      <Route exact path='/cooper' component={CooperCalculator}></Route>
+      <Route exact path='/bmi' component={BMICalculator}></Route>
+      <Route exact path='/history' component={DisplayPerformanceData}></Route>
+    </Switch>
+    </>
+  )
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+
+ReactDOM.render((
+  <BrowserRouter>
+    <Application />
+  </BrowserRouter>
+), document.getElementById('root'));
 serviceWorker.unregister();

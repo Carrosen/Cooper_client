@@ -1,0 +1,12 @@
+{
+  "data": {
+    "allow_password_change": false,
+    "email": "another@mail.com",
+    "id": 15,
+    "image": null,
+    "name": "Zane",
+    "nickname": "Zaza",
+    "provider": "email",
+    "uid": "another@mail.com"
+  }
+}
